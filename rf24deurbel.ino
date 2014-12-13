@@ -16,7 +16,7 @@ void setup() {
 }
 
 void loop() {
-    char buf[8] = "\x04" "SKIP";
+    char buf[6] = "\x04" "DBEL";
     if (rf.write(&buf, 5)) delay(200);
 }
 
